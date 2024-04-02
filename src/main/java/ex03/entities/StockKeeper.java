@@ -24,10 +24,19 @@ package ex03.entities;
  * @date 01/04/2024
  * @brief Class StockKeeper
  */
-public class StockKeeper {
+public class StockKeeper extends Product {
 
    private String name;
-    
+
+    public StockKeeper() {
+    }
+
+    public StockKeeper(String name, String name, double price, int numberOfCopies) {
+        super(name, price, numberOfCopies);
+        this.name = name;
+    }
+
+   
    
    
    
